@@ -116,7 +116,7 @@ function App() {
                   <UserContainer 
                   onDisplayUser={(myuser)=>handleDisplayUser(myuser)} // Function to display additional info for a user
                   key={i} // UserContainer key
-                  user={<User // User component
+                  user={<User // User component passed as a prop to the UserContainer
                           id={i} 
                           name={user.name.first + ' ' + user.name.last} 
                           email={user.email} 
